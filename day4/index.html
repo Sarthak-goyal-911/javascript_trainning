@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function checkDrivingage(){
+        let age = prompt("Enter your age:")
+        if(age<18){
+            alert(`You are left with ${18-age} years to drive.`)
+        }
+        else{
+            alert(`You are old enough to drive.`)
+
+        }
+    }
+    function checkAge(){
+        const Age = 25
+        let ag = prompt("Enter your age:")
+        if(ag<Age){
+            alert(`You are ${Age-ag} years younger than me.`)
+        }
+        else if( ag == Age ){
+            alert(`We have same age.`)
+        }
+        else{
+            alert(`You are ${ag - Age} years older than me.`)
+
+        }
+    }
+    function checkNum(){
+        let a = prompt("Enter number a:")
+        let b = prompt("Enter number b:")
+        if(a>b){
+            isGreater = true
+        }
+        else{
+            isGreater = false
+        }
+        isGreater?alert(`${a} is greater than ${b}`):alert(`${a} is less than ${b}`)
+    }
+    // function checkMarks(marks){
+    //     let marks = prompt("Enter the Marks:")
+    //     marks = parseInt(marks)
+    //     switch(marks){
+    //         case marks>=80 && marks<=100:
+    //             alert(`Your grade is A`)
+    //             break;
+    //         case (marks>=70 && marks<=89):
+    //             alert(`Your grade is B`)
+    //             break;
+    //         case (marks>=60 && marks<=69):
+    //             alert(`Your grade is C`)
+    //             break;
+    //         case (marks>=0 && marks<=49):
+    //             alert(`Your grade is D`)
+    //             break;
+    //             case (marks>=70 && marks<=89):
+    //             alert(`Your grade is F`)
+    //             break;
+    //         default:
+    //             alert(`Invalid marks`);
+    //     }
+    // }
+    // function checkSeason(){
+    //     let season_ui = prompt('Enter the month:')
+    //     let season = season_ui.toLowerCase()
+
+    //     switch(season){
+    //         case 'January':
+    //         case 'March':
+    //         case 'May':
+    //         case 'July':
+    //         case 'August':
+    //         case 'October':
+    //         case 'December':
+    //             alert('31');
+    //             break;
+    //         case 'April':
+    //         case 'June':
+    //         case 'September':
+    //         case 'November':
+    //             alert('30');
+    //                 break;
+    //         case 'February':
+    //             alert('28');
+    //             break;
+    //         default:
+    //             alert('Invalid');
+    //     }
+
+    //     }
+    
+</script>
+<body>
+    <div>
+        <button onclick="checkDrivingage()">Check Dive age</button>
+        <button onclick="checkAge()">Check age</button>
+        <button onclick="checkNum()">Check Number</button>
+
+    </div>
+</body>
+</html>
