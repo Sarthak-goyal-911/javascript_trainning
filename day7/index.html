@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 2</title>
+    <script>
+        function fullName(){
+            let fname = prompt("Enetr the first name")
+            let lname = prompt("Enetr the last name")
+            let full = fname + lname
+            alert(`The full name is ${full}.`)
+        }
+        function findArea(){
+            let base= prompt("Enter the base:")
+        let height = prompt("Enter the height:")
+        let area = base*height
+        alert(`the Area of triangle is ${area}`)
+        }
+      function findperimeter(){
+        let a = prompt("Enetr side a")
+        let b = prompt("Enetr side b")
+        let c = prompt("Enetr side c")
+        let perimeter = +a + +b + +c
+        alert(`The Perimeter of triangle is ${perimeter}`)
+      }
+      function findAreaRec(){
+            let len= prompt("Enter the Length:")
+        let wid = prompt("Enter the Width:")
+        let areaRec = len*wid
+        alert(`the Area of triangle is ${areaRec}`)
+        }
+        function findAreaCir(){
+            const pi = 3.14
+            let r= prompt("Enter the Radius:")
+        let areaC = pi*r*r
+        alert(`the Area of triangle is ${areaC}`)
+        }
+        function findSlope(){
+            let y= prompt("Enter the y'coordinate:")
+        let x = prompt("Enter the x'coordinate:")
+        let slope = 
+        alert(`the Area of triangle is ${area}`)
+        }
+        function findY(){
+            let x_= prompt("Enter the value of x:")
+        let y_ = x_*x_ + +x_*6 + 9
+        alert(`the Value of Y is ${y_}`)
+        }
+        function findPay(){
+            let h= prompt("Enter Hours:")
+        let rph = prompt("Enter Rate per hour:")
+        alert(`the Pay of the person is ${h*rph}`)
+        }
+        function NameCheck(){
+            let name = prompt("Enter your Name:")
+            if(name.length > 7){
+                alert(`Your name is Long`)
+            }
+            else{
+                alert(`Your name is Short`)
+
+            }
+        }
+        function AgeCheck(){
+            const year = 2024
+            let myAge = prompt("Enter your birth year:")
+            let Age = year - myAge
+            if(Age < 18){
+                alert(`You are ${Age}. Sorry, You are not eligible to drive.`)
+            }
+            else{
+                alert(`You are ${Age}. You are eligible to drive.`)
+            }
+
+
+        }
+        function SecCheck(){
+                    const sec = 31536000
+                    let live = prompt("Enter number of years you live:")
+                    let sec_live = live*sec
+                    alert(`You lived ${sec_live }`)
+
+        }
+function ConvertTemp(){
+    let oC = prompt("Enter the temp in celcius")
+    let oF = (oC * 9/5) + 32
+    alert(`Temp in Fahrenheit is ${oF}`)
+}
+function CheckSeason(){
+    let 
+}
+    </script>
+</head>
+<body>
+    <div>
+        <div style="height: 100%; display: flex; padding: 100px; margin: 0; box-sizing: border-box; justify-content: center; align-items: center; gap: 20px; ">
+            <button onclick="fullName()">Full Name</button>
+            <button onclick="findArea()">AREA of triangle</button>
+            <button onclick="findperimeter()">Perimeter</button>
+            <button onclick="findAreaRec()">Area of Rectangle</button>
+            <button onclick="findAreaCir()">Area of Circle</button>
+            <button onclick="findSlope()">Get Slope</button>
+            <button onclick="findY()">Get Y</button>
+            <button onclick="findPay()">Find Pay</button>
+            <button onclick="NameCheck()">Check Your Name</button>
+            <button onclick="AgeCheck()">Check Your Age</button>
+            <button onclick="SecCheck()">Number of seconds</button>
+            <button onclick="ConvertTemp()">Convert temperature</button>
+            <button onclick="CheckSeason()">Check Season</button>
+        </div>
+    </div> 
+    
+    
+</body>
+</html>

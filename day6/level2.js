@@ -38,3 +38,42 @@ console.log(arr);
     console.log(new_arr)
     console.log(new_)
 
+const countryArrays = []
+
+for (let i = 0; i < countries.length; i++) {
+    const country = countries[i];
+    const countryArray = [country, country.slice(0,3).toUpperCase(), country.length];
+    countryArrays.push(countryArray);
+}
+
+console.log(countryArrays);
+
+const land = []
+for(let i=0;i<countries.length;i++){
+    if(countries[i].includes('land')){
+        land.push(countries[i])
+    }
+}
+console.log(land)
+let max_len =''
+let max=0
+for(let i=0;i<countries.length;i++){
+     const len = countries[i].length
+     if(len>max){
+        max=len
+        max_len = countries[i]
+     }
+}
+console.log(max_len)
+
+let max_lenn =[]
+let maxx=5
+for(let i=0;i<countries.length;i++){
+     const len = countries[i].length
+     if(len == maxx){
+        maxx=len
+        max_lenn.push(countries[i])
+     }
+}
+console.log(max_lenn)
+
